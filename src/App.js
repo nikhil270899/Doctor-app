@@ -130,7 +130,6 @@ function App() {
     }, 100);
 
     const localRadioUser = localStorage.getItem("USER");
-    console.log(localRadioUser);
     setRadioBtn(localRadioUser);
   }, [singleUser]);
   let radioInput = (
@@ -268,7 +267,6 @@ function App() {
     setAppointmentDetails((prevState) => {
       return [...prevState, details];
     });
-    setRadioBtn("");
   };
   return (
     <div className="App">
